@@ -10,6 +10,8 @@ elsif RUBY_VERSION < '2.2.2'
   gem 'activesupport', '< 5'
 elsif RUBY_VERSION < '2.5.0'
   gem 'activesupport', '< 6'
+elsif RUBY_VERSION < '2.7.0'
+  gem 'activesupport', '< 7'
 else
   gem 'activesupport', :git => 'https://github.com/rails/rails', :branch => :main
 end
